@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite01">
+    <parameter name="browser" value="chrome"/>
+
+    <!-- 3 ERROR 5 WARNING 7 INFO 9 DEBUG -->
+    <test verbose="9" name="TestGroup01">
+        <parameter name="number" value="123"/>
+        <parameter name="url" value="https://www.google.com"/>
+        <classes>
+            <class name="com.softserve.edu.WebDriverTest" />
+<!--            <class name="com.softserve.edu.AppTest">-->
+<!--                <methods>-->
+<!--                    <include name="testApp1"/>-->
+<!--                    &lt;!&ndash;             <include name="testApp2" />&ndash;&gt;-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
